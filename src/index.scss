@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+@keyframes moveRight {
+  0% { left: 0; }
+  100% { left: 100%; }
+}
+
+.box {
+  position: fixed;
+  top: 10%;
+  width: 150px;
+  height: 150px;
+  background: url("./running.gif");
+  animation: moveRight 5s linear infinite;
+}
