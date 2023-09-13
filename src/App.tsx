@@ -28,7 +28,7 @@ import './index.scss';
 
 const App: React.FC = () => {
   return (
-    <React.Suspense fallback={<div className="spinner"></div>}>
+    <>
       <h1>Loaded from App2 Microfrontend</h1>
       <Nav></Nav>
       <Forms3D />
@@ -42,7 +42,7 @@ const App: React.FC = () => {
           <Handsontable />
         </div>
       </div>
-    </React.Suspense>
+    </>
   );
 };
 
