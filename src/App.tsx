@@ -9,6 +9,7 @@ import Forms3D from 'header-remote/Forms3D';
 
 import ThreeJSComponent from './components/Launchpad';
 import Handsontable from './components/Handsontable';
+import Card from './components/Card';
 
 // import { MainThread } from './components/MainThread';
 // import { WorkerThread } from './components/WorkerThread';
@@ -23,6 +24,7 @@ import Handsontable from './components/Handsontable';
 
 // const ThreeJSComponent = React.lazy(() => import('./components/Launchpad'));
 // const Handsontable = React.lazy(() => import('./components/Handsontable'));
+// const Card = React.lazy(() => import('./components/Card'));
 
 import './index.scss';
 
@@ -39,6 +41,7 @@ const App: React.FC = () => {
         <h1 className="mt-10">Loaded from App1 Microfrontend</h1>
         <ThreeJSComponent />
         <div className="mt-10 text-3xl mx-auto max-w-6xl">
+          <Card />
           <Handsontable />
         </div>
       </div>
