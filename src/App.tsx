@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-@ts-expect-error
+// @ts-expect-error
 import Nav from 'header-remote/Nav';
 //@ts-expect-error
 import FormsHanson from 'header-remote/FormsHanson';
@@ -22,7 +22,19 @@ import Card from './components/Card';
 // const Handsontable = React.lazy(() => import('./components/Handsontable'));
 // const Card = React.lazy(() => import('./components/Card'));
 
+import { MainThread } from './components/MainThread';
+import { WorkerThread } from './components/WorkerThread';
+
 import './index.scss';
+
+// const App: React.FC = () => {
+//   return (
+//     <>
+//       <MainThread></MainThread>
+//       <WorkerThread />
+//     </>
+//   );
+// };
 
 const App: React.FC = () => {
   return (
