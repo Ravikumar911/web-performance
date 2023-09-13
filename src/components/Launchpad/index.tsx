@@ -48,3 +48,5 @@ export const ThreeJSComponent = () => {
 
   return <div id="threejs-canvas"></div>;
 };
+
+export default ThreeJSComponent;

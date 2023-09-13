@@ -20,3 +20,5 @@ export const Handsontable = () => {
     />
   );
 };
+
+export default Handsontable;
