@@ -42,6 +42,9 @@ const App: React.FC = () => {
         <ThreeJSComponent />
         <div className="mt-10 text-3xl mx-auto max-w-6xl">
           <Card />
+          <div className="my-6">
+            <h1>Summary Table</h1>
+          </div>
           <Handsontable />
         </div>
       </div>
