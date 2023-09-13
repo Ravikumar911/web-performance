@@ -11,7 +11,7 @@ export const ThreeJSComponent = () => {
     // Create a camera
     const camera = new THREE.PerspectiveCamera(
       75,
-      window.innerWidth / window.innerHeight,
+      window.innerWidth / 400,
       0.1,
       1000
     );
@@ -19,7 +19,7 @@ export const ThreeJSComponent = () => {
 
     // Create a renderer
     const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(window.innerWidth, 400);
     mount.appendChild(renderer.domElement);
 
     // Create a cube
