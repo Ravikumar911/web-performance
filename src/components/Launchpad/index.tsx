@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import * as THREE from 'three';
 
-function ThreeJSComponent() {
+export const ThreeJSComponent = () => {
   useEffect(() => {
     let mount = document.getElementById('threejs-canvas');
 
@@ -47,6 +47,4 @@ function ThreeJSComponent() {
   }, []);
 
   return <div id="threejs-canvas"></div>;
-}
-
-export default ThreeJSComponent;
+};
